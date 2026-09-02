@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <title>GameQuiz — Daily Video Game Quiz for Discord</title>
+  <meta name="description" content="GameQuiz is a bilingual daily video game quiz bot for Discord with private answers, monthly seasons, profiles, achievements, configurable image rounds, reports and server controls.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GameQuiz — Daily Video Game Quiz for Discord">
+  <meta property="og:description" content="One quiz a day. Private answers. Monthly seasons, profiles, achievements, configurable image rounds and full server controls — in English & French.">
+  <meta property="og:url" content="https://gamequizbot.github.io/gamequiz-site/">
+  <meta property="og:image" content="https://gamequizbot.github.io/gamequiz-site/assets/gamequiz-banner.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GameQuiz — Daily Video Game Quiz for Discord">
+  <meta name="twitter:description" content="One quiz a day. Private answers. Monthly competition. English & French.">
+  <meta name="twitter:image" content="https://gamequizbot.github.io/gamequiz-site/assets/gamequiz-banner.webp">
+
+  <link rel="icon" href="assets/gamequiz-avatar.webp" type="image/webp">
+  <link rel="preload" href="assets/gamequiz-banner.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body class="home-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="shell nav-shell">
+      <a class="brand" href="index.html" aria-label="GameQuiz home">
+        <img src="assets/gamequiz-avatar.webp" alt="" width="44" height="44">
+        <span>GameQuiz</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#features">Features</a>
+        <a href="#discord-preview">In Discord</a>
+        <a href="#server-controls">Server controls</a>
+        <a href="support.html">Support</a>
+      </nav>
+
+      <a class="nav-cta" href="https://discord.com/oauth2/authorize?client_id=1542211007458451649">Add to Discord</a>
+    </div>
+  </header>
+
+  <main id="main-content" class="site-main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="language-pill static-pill">
+          <span class="status-dot" aria-hidden="true"></span>
+          English & Français · Public beta
+        </span>
+
+        <p class="eyebrow">A DAILY VIDEO GAME QUIZ FOR DISCORD</p>
+        <h1 id="hero-title">One quiz a day.<br><span>A whole season to win.</span></h1>
+        <p class="hero-lead">GameQuiz turns your Discord server into a daily video game challenge with <strong>private, editable answers</strong>, monthly seasons, global rankings, profiles, statistics, 40 achievements and configurable image rounds — with no speed advantage.</p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1542211007458451649">
+            <span aria-hidden="true">＋</span> Add GameQuiz to Discord
+          </a>
+          <a class="btn secondary" href="https://discord.gg/eeuk8C4dnR">Join support server</a>
+        </div>
+
+        <div class="hero-points" aria-label="GameQuiz highlights">
+          <span>✓ 1 automatic quiz every day</span>
+          <span>✓ Answers stay private until correction</span>
+          <span>✓ English & French</span>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="GameQuiz artwork">
+        <div class="visual-glow glow-one" aria-hidden="true"></div>
+        <div class="visual-glow glow-two" aria-hidden="true"></div>
+        <div class="banner-card">
+          <img class="hero-banner" src="assets/gamequiz-banner.webp" alt="GameQuiz artwork with a controller, question marks, trophy and gaming symbols" width="1600" height="640" fetchpriority="high">
+          <div class="banner-shine" aria-hidden="true"></div>
+        </div>
+        <div class="avatar-float">
+          <img src="assets/gamequiz-avatar.webp" alt="GameQuiz bot mascot" width="600" height="600">
+        </div>
+      </div>
+    </section>
+
+    <section class="proof-strip" aria-label="GameQuiz overview">
+      <div class="shell proof-grid">
+        <div><strong>01</strong><span>Daily quiz</span></div>
+        <div><strong>02</strong><span>Monthly seasons</span></div>
+        <div><strong>03</strong><span>Profiles, stats & 40 achievements</span></div>
+        <div><strong>04</strong><span>Full per-server configuration</span></div>
+      </div>
+    </section>
+
+    <section id="features" class="section shell">
+      <div class="section-heading">
+        <p class="eyebrow">BUILT FOR DAILY PLAY</p>
+        <h2>Easy to join. Built to last.</h2>
+        <p>A short daily ritual, long-term competition and enough control for every server to make GameQuiz its own.</p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card daily-card">
+          <div class="feature-icon" aria-hidden="true">🧠</div>
+          <p class="feature-kicker">DAILY QUIZ</p>
+          <h3>A fresh challenge every day</h3>
+          <p>GameQuiz publishes one quiz automatically. Answers remain private while the quiz is open, can be edited until closing time, and are all revealed together with the correction.</p>
+
+          <div class="daily-preview" aria-label="Example daily quiz">
+            <div class="daily-preview-top">
+              <span>TODAY'S QUIZ</span>
+              <span class="daily-preview-points">+1 point</span>
+            </div>
+            <strong>Answer whenever you want before the deadline.</strong>
+            <small>🔒 No speed bonus — everyone gets the same chance.</small>
+          </div>
+        </article>
+
+        <article class="feature-card competition-card">
+          <div class="feature-icon" aria-hidden="true">🏆</div>
+          <p class="feature-kicker">MONTHLY COMPETITION</p>
+          <h3>Compete for the season.</h3>
+          <p>Every server gets its own monthly season while the global leaderboard keeps growing. Track ranks, accuracy, streaks, image-quiz performance and long-term progress.</p>
+
+          <div class="competition-panel" aria-label="Competition features">
+            <div class="competition-row">
+              <span class="competition-symbol">🏆</span>
+              <div><strong>Monthly seasons</strong><small>A fresh ranked race every month.</small></div>
+            </div>
+            <div class="competition-row">
+              <span class="competition-symbol">📊</span>
+              <div><strong>Profiles & detailed stats</strong><small>Ranks, accuracy, streaks and participation history.</small></div>
+            </div>
+            <div class="competition-row">
+              <span class="competition-symbol">🏅</span>
+              <div><strong>40 achievements</strong><small>Including long-term, seasonal and secret challenges.</small></div>
+            </div>
+            <div class="competition-row">
+              <span class="competition-symbol">🌍</span>
+              <div><strong>All-time leaderboard</strong><small>Your global score never resets with the season.</small></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="feature-card language-card">
+          <div class="feature-icon" aria-hidden="true">🌍</div>
+          <p class="feature-kicker">ENGLISH & FRENCH</p>
+          <h3>One bot, two complete languages</h3>
+          <p>Choose English or French during <code>/setup</code>. Quiz content and interfaces follow the server language, while Discord localizes slash-command names for each user.</p>
+          <div class="language-options" aria-hidden="true">
+            <span><b>EN</b> English</span>
+            <span><b>FR</b> Français</span>
+          </div>
+        </article>
+
+        <article class="feature-card image-card">
+          <div class="feature-copy">
+            <div class="feature-icon" aria-hidden="true">🖼️</div>
+            <p class="feature-kicker">IMAGE QUIZZES</p>
+            <h3>Which game is this image from?</h3>
+            <p>Image rounds are worth 2 points. Server admins choose which weekdays use image quizzes. GameQuiz prioritizes Steam Store screenshots, falls back to IGDB when needed, and applies a light local title check before publishing.</p>
+            <div class="source-pills" aria-label="Image quiz sources">
+              <span>Steam first</span><span>IGDB fallback</span><span>Light local check</span>
+            </div>
+          </div>
+          <div class="image-quiz-preview" aria-hidden="true">
+            <img src="assets/gamequiz-banner.webp" alt="" width="1600" height="640" loading="lazy">
+            <span>?</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="discord-preview" class="section shell showcase-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">WHAT PLAYERS ACTUALLY SEE</p>
+        <h2>Made to feel native inside Discord.</h2>
+        <p>Questions, corrections, profiles and achievements stay compact, readable and useful without flooding the channel.</p>
+      </div>
+
+      <div class="showcase-grid">
+        <figure class="showcase-card showcase-wide">
+          <div class="showcase-frame"><img src="qustion-classic-starts.png" alt="Example GameQuiz daily question in Discord" width="1032" height="406" loading="lazy"></div>
+          <figcaption><strong>Daily question</strong><span>Private answers, editable until closing time.</span></figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <div class="showcase-frame"><img src="profile.png" alt="Example GameQuiz player profile in Discord" width="954" height="562" loading="lazy"></div>
+          <figcaption><strong>Player profile</strong><span>Season rank, global rank, statistics, streaks and achievements.</span></figcaption>
+        </figure>
+        <figure class="showcase-card">
+          <div class="showcase-frame showcase-tall"><img src="trophee.png" alt="Example GameQuiz achievements collection in Discord" width="516" height="648" loading="lazy"></div>
+          <figcaption><strong>Achievement collection</strong><span>40 goals, including secret achievements.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="server-controls" class="section shell controls-section">
+      <div class="section-heading">
+        <p class="eyebrow">CONFIGURE IT FOR YOUR SERVER</p>
+        <h2>Flexible without becoming complicated.</h2>
+        <p>Administrators can change the important parts directly from Discord with <code>/configure</code>, without editing deployment variables.</p>
+      </div>
+
+      <div class="control-grid">
+        <article class="control-card"><span>🕒</span><div><h3>Schedule & reminders</h3><p>Choose posting and closing times, time zone, reminder timing and which messages ping the Quiz role.</p></div></article>
+        <article class="control-card"><span>🖼️</span><div><h3>Quiz format by weekday</h3><p>Choose exactly which days use image rounds and which days use standard questions.</p></div></article>
+        <article class="control-card"><span>🎛️</span><div><h3>Content filters</h3><p>Include or exclude categories, difficulties, genres and platforms to better fit your community.</p></div></article>
+        <article class="control-card"><span>📺</span><div><h3>Channel, role & language</h3><p>Move the quiz channel, change the notification role or switch the server between English and French.</p></div></article>
+        <article class="control-card"><span>⏸️</span><div><h3>Pause without losing progress</h3><p>Temporarily stop new automatic quizzes, then resume later while preserving rankings and history.</p></div></article>
+        <article class="control-card"><span>🧪</span><div><h3>Built-in checks & tests</h3><p>Admins can verify configuration and permissions, publish test questions and manually close a test when needed.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section shell trust-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">SUPPORT & DATA CONTROLS</p>
+        <h2>Useful tools when something goes wrong.</h2>
+      </div>
+      <div class="trust-grid">
+        <article class="trust-card">
+          <div class="feature-icon" aria-hidden="true">🚩</div>
+          <h3>Report a quiz problem privately</h3>
+          <p>Use <code>/report</code> / <code>/signaler</code> to send a problem to the GameQuiz team with the useful quiz context attached. Track the conversation with <code>/my_reports</code>.</p>
+        </article>
+        <article class="trust-card">
+          <div class="feature-icon" aria-hidden="true">🔐</div>
+          <h3>Player data controls</h3>
+          <p>Users can export their active server data with <code>/my_data</code> and delete it with <code>/delete_my_data</code>, including linked GameQuiz reports.</p>
+        </article>
+        <article class="trust-card">
+          <div class="feature-icon" aria-hidden="true">🗑️</div>
+          <h3>Server-level deletion</h3>
+          <p>Administrators can permanently delete the server's active GameQuiz data with <code>/delete_server_data</code> after confirmation.</p>
+        </article>
+      </div>
+      <p class="trust-note">See the <a href="privacy.html">Privacy Policy</a> for retention details and the <a href="terms.html">Terms of Service</a> for the rules governing GameQuiz.</p>
+    </section>
+
+    <section id="how-it-works" class="section shell steps-section">
+      <div class="section-heading centered">
+        <p class="eyebrow">SETUP IN MINUTES</p>
+        <h2>Three steps and your server is ready.</h2>
+      </div>
+
+      <div class="steps-grid">
+        <article class="step-card">
+          <span class="step-number">01</span>
+          <h3>Add GameQuiz</h3>
+          <p>Install the bot on the Discord server you manage.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">02</span>
+          <h3>Run <code>/setup</code></h3>
+          <p>Choose the language, quiz channel, time zone, schedule and notification role.</p>
+        </article>
+        <article class="step-card">
+          <span class="step-number">03</span>
+          <h3>Fine-tune with <code>/configure</code></h3>
+          <p>Adjust reminders, pings, filters and image-quiz days whenever you want.</p>
+        </article>
+      </div>
+
+      <div class="setup-cta">
+        <div>
+          <p class="eyebrow">READY?</p>
+          <h3>Bring GameQuiz to your server.</h3>
+          <p>A member with the required server-management permission must complete <code>/setup</code>.</p>
+        </div>
+        <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1542211007458451649">Add to Discord</a>
+      </div>
+    </section>
+
+    <section class="section shell final-cta">
+      <div class="final-cta-art" aria-hidden="true">
+        <img src="assets/gamequiz-banner.webp" alt="" width="1600" height="640" loading="lazy">
+      </div>
+      <div class="final-cta-content">
+        <img src="assets/gamequiz-avatar.webp" alt="" width="88" height="88" loading="lazy">
+        <div>
+          <p class="eyebrow">YOUR NEXT DAILY RITUAL</p>
+          <h2>Ready for today's quiz?</h2>
+          <p>Add GameQuiz, run <code>/setup</code>, and let the competition begin.</p>
+        </div>
+        <a class="btn primary" href="https://discord.com/oauth2/authorize?client_id=1542211007458451649">Add GameQuiz</a>
+      </div>
+    </section>
+
+    <section class="shell attribution" aria-label="Third-party attribution">
+      <p>Video-game metadata may be provided by <a href="https://www.igdb.com/">IGDB</a>. Image quizzes use public <a href="https://store.steampowered.com/">Steam</a> Store screenshots in priority, with IGDB as a fallback. Game names, trademarks and imagery remain the property of their respective rights holders.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div class="footer-brand">
+        <img src="assets/gamequiz-avatar.webp" alt="" width="48" height="48" loading="lazy">
+        <div><strong>GameQuiz</strong><span>Daily video game quiz for Discord · English & Français</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+      </div>
+      <p class="footer-operator">Operated by Pierre-André Giorgifani</p>
+    </div>
+  </footer>
+</body>
+</html>
