@@ -271,8 +271,9 @@ code {
   transform: perspective(1000px) rotateY(-4deg) rotateX(1deg);
 }
 .hero-banner {
-  aspect-ratio: 2.5 / 1;
+  aspect-ratio: .9 / 1;
   width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 21px;
 }
@@ -900,7 +901,7 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ============================================================
-   GameQuiz site refresh — September 2026
+   GameQuiz V1.0.0 site refresh
    Keeps the existing visual language while adding sections for
    current public-bot features and real Discord previews.
    ============================================================ */
@@ -920,6 +921,17 @@ a:focus-visible, button:focus-visible {
   font-size: .72rem;
   font-weight: 750;
 }
+
+.competition-launch {
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid rgba(139, 92, 246, .35);
+  border-radius: 14px;
+  background: rgba(103, 78, 255, .08);
+}
+.competition-launch .feature-kicker { color: #c4b5fd; }
+.competition-launch h4 { margin: 0; font-size: 1.1rem; }
+.competition-launch p:last-child { margin: 9px 0 0; font-size: .88rem; }
 
 .showcase-section { padding-top: 126px; }
 .showcase-grid {
@@ -955,6 +967,7 @@ a:focus-visible, button:focus-visible {
 }
 .showcase-frame img {
   width: auto;
+  height: auto;
   max-width: 100%;
   max-height: 410px;
   object-fit: contain;
@@ -974,6 +987,16 @@ a:focus-visible, button:focus-visible {
 .showcase-card figcaption span { color: #8f9bb8; font-size: .82rem; }
 
 .controls-section { padding-top: 126px; }
+.controls-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+}
+.controls-layout .control-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.configuration-card .showcase-frame { padding: 0; min-height: 0; }
+.configuration-card .showcase-frame img { width: 100%; height: auto; max-height: none; }
+.configuration-note { margin: 0 5px 3px; color: var(--muted); font-size: .82rem; }
 .control-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1047,6 +1070,8 @@ body:not(.home-page) .support-grid .card p:last-child { margin-bottom: 0; }
 body:not(.home-page) .support-install-card { grid-column: 1 / -1; }
 
 @media (max-width: 1040px) {
+  .controls-layout { grid-template-columns: 1fr; }
+  .configuration-card { width: min(100%, 680px); justify-self: center; }
   .control-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -1055,7 +1080,8 @@ body:not(.home-page) .support-install-card { grid-column: 1 / -1; }
   .trust-grid { grid-template-columns: 1fr; }
   .showcase-wide { grid-column: auto; }
   .showcase-frame { min-height: 220px; }
-  .control-grid { grid-template-columns: 1fr; }
+  .control-grid,
+  .controls-layout .control-grid { grid-template-columns: 1fr; }
   .control-card { min-height: auto; }
   body:not(.home-page) .support-grid { grid-template-columns: 1fr; }
   body:not(.home-page) .support-install-card { grid-column: auto; }
